@@ -5,6 +5,7 @@ import './App.css'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import Ticket from './components/Ticket'
+import Footer from './components/Footer'
 
 function App() {
   const [inprogress, setInprogress]= useState(0);
@@ -38,6 +39,7 @@ function App() {
     <Suspense fallback={<p>Loading tickets...</p>}>
       <Ticket ticketPromise={ticketPromise} handleTicket={handleTicket} selectedTicket={selectedTicket} handleCompleteTask={handleCompleteTask} resolvedTask={resolvedTask}></Ticket>
     </Suspense>
+    <Footer></Footer>
     </>
   )
 }
