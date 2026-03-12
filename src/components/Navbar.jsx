@@ -13,7 +13,7 @@ const Navbar = () => {
     return (
         <div className="navbar max-w-7xl mx-auto shadow-sm text-black">
             <div className="flex-1">
-                <a className="btn btn-ghost text-xl font-semibold">CS — Ticket System</a>
+                <a className="btn btn-ghost text-xl font-bold">CS — Ticket System</a>
             </div>
             <div className="flex-none">
                 <ul className="menu menu-horizontal px-1">

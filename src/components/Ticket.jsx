@@ -25,7 +25,7 @@ const Ticket = ({ticketPromise, handleTicket, selectedTicket, handleCompleteTask
                         <h2 className='text-xl font-semibold mb-8'>Ticket Status</h2>
                      <div className='flex flex-col gap-4'>
                         {
-                       selectedTicket.length >0 && selectedTicket.map((ticket, index) => <TaskStatusCard key={index} ticket={ticket} handleCompleteTask={handleCompleteTask}></TaskStatusCard>)
+                       selectedTicket.length >0 ?  selectedTicket.map((ticket, index) => <TaskStatusCard key={index} ticket={ticket} handleCompleteTask={handleCompleteTask}></TaskStatusCard>) : <p>No ticket selected.</p>
                      }
                      </div>
                     </div>
@@ -33,7 +33,7 @@ const Ticket = ({ticketPromise, handleTicket, selectedTicket, handleCompleteTask
                          <h2 className='text-xl font-semibold mb-8'>Resolved Task</h2>
                          <div className='flex flex-col gap-4'>
                             {
-                                resolvedTask.length >0 && resolvedTask.map((ticket, index) => <ResolvedCard key={index} ticket={ticket}></ResolvedCard>)
+                                resolvedTask.length >0 ? resolvedTask.map((ticket, index) => <ResolvedCard key={index} ticket={ticket}></ResolvedCard>):<p>No resolved task available.</p>
                             }
                          
                          </div>

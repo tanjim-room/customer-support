@@ -6,6 +6,10 @@ import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import Ticket from './components/Ticket'
 import Footer from './components/Footer'
+import "react-toastify/dist/ReactToastify.css";
+import { toast, ToastContainer } from 'react-toastify'
+import CopyRight from './components/CopyRight'
+
 
 function App() {
   const [inprogress, setInprogress]= useState(0);
@@ -20,6 +24,7 @@ function App() {
     setSelectedTicket([...selectedTicket,ticket])
     setInprogress(inprogress + 1);
     console.log("clicked")
+    toast("Added a Ticket Inprogress.")
   }
 
   const [resolvedTask, setResolvedTask] = useState([])
@@ -29,6 +34,7 @@ function App() {
         setSelectedTicket(selectedTicket.filter(t => t.id !== ticket.id));
         setResolved(resolved + 1);
         setInprogress(inprogress - 1)
+        toast("Task Completed.")
     }
  
 
@@ -40,6 +46,9 @@ function App() {
       <Ticket ticketPromise={ticketPromise} handleTicket={handleTicket} selectedTicket={selectedTicket} handleCompleteTask={handleCompleteTask} resolvedTask={resolvedTask}></Ticket>
     </Suspense>
     <Footer></Footer>
+   
+    <CopyRight></CopyRight>
+    <ToastContainer></ToastContainer>
     </>
   )
 }
