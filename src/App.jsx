@@ -35,6 +35,7 @@ function App() {
         setResolved(resolved + 1);
         setInprogress(inprogress - 1)
         toast("Task Completed.")
+
     }
  
 

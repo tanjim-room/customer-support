@@ -5,7 +5,13 @@ import ResolvedCard from './ResolvedCard';
 
 const Ticket = ({ticketPromise, handleTicket, selectedTicket, handleCompleteTask, resolvedTask}) => {
   
-   const tickets = use(ticketPromise);
+   const allTickets = use(ticketPromise);
+   const tickets = allTickets.filter(ticket =>
+        ticket.status !== "completed" &&
+        !resolvedTask.some(r => r.id === ticket.id)
+   )
+
+
     
     return (
         <div className='max-w-7xl mx-auto text-black'>
