@@ -1,0 +1,110 @@
+[
+  {
+    "id": "1001",
+    "title": "Login page returning 500 error",
+    "description": "Users reporting they cannot access the dashboard. Server logs indicate a database connection timeout.",
+    "customer": "TechNova",
+    "priority": "High",
+    "status": "In Progress",
+    "createdAt": "2026-03-08T08:15:00Z"
+  },
+  {
+    "id": "1002",
+    "title": "Update billing address",
+    "description": "Customer needs to change their primary office address for upcoming invoices.",
+    "customer": "GreenLeaf",
+    "priority": "Low",
+    "status": "Open",
+    "createdAt": "2026-03-08T09:20:00Z"
+  },
+  {
+    "id": "1003",
+    "title": "Slow API response times",
+    "description": "The /v1/search endpoint is taking over 2 seconds to respond during peak hours.",
+    "customer": "SwiftStream",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "2026-03-08T10:05:00Z"
+  },
+  {
+    "id": "1004",
+    "title": "Request for feature: Dark Mode",
+    "description": "Multiple users from the design team are requesting a native dark mode for the web app.",
+    "customer": "PixelPerfect",
+    "priority": "Medium",
+    "status": "Open",
+    "createdAt": "2026-03-08T11:30:00Z"
+  },
+  {
+    "id": "1005",
+    "title": "Forgotten password email not sending",
+    "description": "Customer claims they haven't received the reset link after three attempts.",
+    "customer": "John Doe",
+    "priority": "High",
+    "status": "In Progress",
+    "createdAt": "2026-03-08T12:00:00Z"
+  },
+  {
+    "id": "1006",
+    "title": "Bulk export failing at 50%",
+    "description": "CSV export crashes when attempting to download more than 5,000 records.",
+    "customer": "DataDynamics",
+    "priority": "Medium",
+    "status": "In Progress",
+    "createdAt": "2026-03-08T13:45:00Z"
+  },
+  {
+    "id": "1007",
+    "title": "Mobile app UI glitch on iOS 19",
+    "description": "The navigation bar overlaps with the status bar on the latest beta firmware.",
+    "customer": "BetaGroup",
+    "priority": "Medium",
+    "status": "Open",
+    "createdAt": "2026-03-08T14:10:00Z"
+  },
+  {
+    "id": "1008",
+    "title": "Payment declined - Credit Card",
+    "description": "Subscription renewal failed. Customer verified funds; suspecting gateway issue.",
+    "customer": "UrbanOut",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "2026-03-08T15:22:00Z"
+  },
+  {
+    "id": "1009",
+    "title": "Typo in 'Terms of Service'",
+    "description": "Section 4.2 has a spelling error: 'Lialbility' instead of 'Liability'.",
+    "customer": "Internal",
+    "priority": "Low",
+    "status": "Open",
+    "createdAt": "2026-03-08T15:50:00Z"
+  },
+  {
+    "id": "1010",
+    "title": "API Key revocation request",
+    "description": "Security breach suspected. Need to rotate all production keys immediately.",
+    "customer": "SecureBank",
+    "priority": "High",
+    "status": "In Progress",
+    "createdAt": "2026-03-08T16:05:00Z"
+  },
+  {
+    "id": "1011",
+    "title": "Onboarding session scheduling",
+    "description": "New team needs a walkthrough of the reporting module.",
+    "customer": "GlobalLog",
+    "priority": "Medium",
+    "status": "In Progress",
+    "createdAt": "2026-03-08T16:30:00Z"
+  },
+  {
+    "id": "1012",
+    "title": "Integration with Slack failing",
+    "description": "Webhooks are not triggering notifications for high-priority alerts.",
+    "customer": "TechNova",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "2026-03-08T17:10:00Z"
+  }
+]
