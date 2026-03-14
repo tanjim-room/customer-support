@@ -1,6 +1,8 @@
 ## What is JSX, and why is it used?
 => JavaScript XML. Used for writing Javascript in React.
+
 => Easy to Understand
+
 => Write Javascript + UI 
 => Make code readable
 
